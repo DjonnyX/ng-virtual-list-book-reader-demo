@@ -10,8 +10,6 @@ The project uses dependencies only from the Angular ecosystem and [ng-virtual-li
 
 [Live Demo](https://book-reader.eugene-grebennikov.pro/)
 
-![demo_preview](https://github.com/user-attachments/assets/93bcb88c-cc2e-48d6-a15c-b341aeb0d1a8)
-
 <br/>
 
 ## ⚙️ Key Features
