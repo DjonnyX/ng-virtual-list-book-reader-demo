@@ -51,8 +51,8 @@ This project addresses performance issues when working with long lists of chat m
 1. 📄 Clone the repository.
 
 ```bash
-git clone https://github.com/DjonnyX/ng-virtual-list-book-reader.git
-cd ng-virtual-list-book-reader
+git clone https://github.com/DjonnyX/ng-virtual-list-book-reader-demo.git
+cd ng-virtual-list-book-reader-demo
 ```
 
 2. 📦 Install dependencies
