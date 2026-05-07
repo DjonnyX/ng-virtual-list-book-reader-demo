@@ -14,14 +14,13 @@ import {
 import { IBookPageData } from "@shared/models/pages";
 import { ThemeService } from '@shared/theming';
 import { ITheme } from '@shared/theming';
-import { ILocalization, LocaleSensitiveDirective, LocalizationService } from '@shared/localization';
+import { ILocalization, LocalizationService } from '@shared/localization';
 import { StaticClickDirective } from '@shared/directives';
 import { validateCollection } from './utils/validate-collection';
 import { ReaderService } from '../reader.service';
 import { IProxyCollectionItem, ProxyCollection, ProxyCollectionEvents } from './utils/proxy-collection';
 import { CustomScrollBarTheme } from '@shared/components/custom-scrollbar/interfaces/custom-scrollbar-theme';
 import { CustomScrollbarModule } from '@shared/components/custom-scrollbar/custom-scrollbar.module';
-import { BookScrollToStartButtonComponent } from '@entities/book/book-scroll-to-start-button/book-scroll-to-start-button.component';
 import { MediaService } from '@shared/directives/media';
 
 const SCROLLBAR_PRESET = 'x-scrollbar-secondary',
@@ -36,8 +35,8 @@ const SCROLLBAR_PRESET = 'x-scrollbar-secondary',
   selector: 'x-reader',
   imports: [
     CommonModule, PageBoxComponent, NgVirtualListModule,
-    PageLoadingIndicatorComponent, BookScrollToStartButtonComponent,
-    StaticClickDirective, LocaleSensitiveDirective, CustomScrollbarModule,
+    PageLoadingIndicatorComponent,
+    StaticClickDirective, CustomScrollbarModule,
   ],
   standalone: true,
   templateUrl: './reader.component.html',
