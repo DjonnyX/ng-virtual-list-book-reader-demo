@@ -6,9 +6,8 @@ import {
 } from 'rxjs';
 import { PageLoadingIndicatorComponent } from '@entities/book';
 import { PageBoxComponent } from '@features/page';
-import { NgVirtualListComponent } from '@shared/components';
 import {
-  NgVirtualListModule, FocusAlignments, IAnimationParams, Id, IDisplayObjectConfig, IScrollEvent, IVirtualListItem,
+  NgVirtualListModule, NgVirtualListComponent, FocusAlignments, IAnimationParams, Id, IDisplayObjectConfig, IScrollEvent, IVirtualListItem,
   NgVirtualListPublicService, IScrollingSettings,
 } from 'ng-virtual-list';
 import { IBookPageData } from "@shared/models/pages";
