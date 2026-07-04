@@ -130,14 +130,14 @@ export class PageBoxComponent implements AfterViewInit, OnDestroy {
     });
 
     this.classes = computed(() => {
-      const params = this.params(), { reseted } = params, initialized = this.initialized();
+      const params = this.params(), { reseted } = params, initialized = this.initialized(), config = this.config() as any,
+        grabbing = config?.grabbing ?? false;
       if (reseted) {
-        return { [CLASS_RESETED]: !initialized || reseted, } as any;
+        return { [CLASS_RESETED]: !initialized || reseted, grabbing, } as any;
       }
 
-      const config = this.config() as any;
       return {
-        [CLASS_SIMPLE]: true,
+        [CLASS_SIMPLE]: true, grabbing,
         [CONFIG_PROP_PREPARED]: config.prepared, [CLASS_RTL]: this._localizationService.textDirection === TextDirections.RTL,
       };
     });
